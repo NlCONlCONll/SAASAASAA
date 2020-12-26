@@ -8,3 +8,13 @@ C:\Users\erick\source\repos\Battle System\Battle System\obj\Debug\Battle System.
 C:\Users\erick\source\repos\Battle System\Battle System\obj\Debug\Battle System.csproj.CoreCompileInputs.cache
 C:\Users\erick\source\repos\Battle System\Battle System\obj\Debug\Battle System.exe
 C:\Users\erick\source\repos\Battle System\Battle System\obj\Debug\Battle System.pdb
+C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\obj\Debug\Battle System.csprojAssemblyReference.cache
+C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\obj\Debug\Battle_System.battlephase.resources
+C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\obj\Debug\Battle_System.Properties.Resources.resources
+C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\obj\Debug\Battle System.csproj.GenerateResource.cache
+C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\obj\Debug\Battle System.csproj.CoreCompileInputs.cache
+C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\obj\Debug\Battle System.exe
+C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\obj\Debug\Battle System.pdb
+C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\bin\Debug\Battle System.exe.config
+C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\bin\Debug\Battle System.exe
+C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\bin\Debug\Battle System.pdb

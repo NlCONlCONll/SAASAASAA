@@ -36,8 +36,8 @@
             this.HealthBar1 = new System.Windows.Forms.ProgressBar();
             this.speedbar1 = new System.Windows.Forms.ProgressBar();
             this.herotimer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.enemyhealth1 = new System.Windows.Forms.ProgressBar();
+            this.enemypic2 = new System.Windows.Forms.PictureBox();
+            this.enemyhealth2 = new System.Windows.Forms.ProgressBar();
             this.globaltimer = new System.Windows.Forms.Timer(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,7 +63,14 @@
             this.minigametimer2 = new System.Windows.Forms.Timer(this.components);
             this.minigame3button = new System.Windows.Forms.Button();
             this.minigametimer3 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.minigametimer1 = new System.Windows.Forms.Timer(this.components);
+            this.enemypic3 = new System.Windows.Forms.PictureBox();
+            this.enemypic1 = new System.Windows.Forms.PictureBox();
+            this.enemyhealth1 = new System.Windows.Forms.ProgressBar();
+            this.enemyhealth3 = new System.Windows.Forms.ProgressBar();
+            ((System.ComponentModel.ISupportInitialize)(this.enemypic2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemypic3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemypic1)).BeginInit();
             this.SuspendLayout();
             // 
             // Attackbutton1
@@ -110,22 +117,22 @@
             this.speedbar1.Size = new System.Drawing.Size(100, 10);
             this.speedbar1.TabIndex = 4;
             // 
-            // pictureBox1
+            // enemypic2
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(328, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(127, 141);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.enemypic2.Image = ((System.Drawing.Image)(resources.GetObject("enemypic2.Image")));
+            this.enemypic2.Location = new System.Drawing.Point(328, 48);
+            this.enemypic2.Name = "enemypic2";
+            this.enemypic2.Size = new System.Drawing.Size(127, 141);
+            this.enemypic2.TabIndex = 5;
+            this.enemypic2.TabStop = false;
+            this.enemypic2.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // enemyhealth1
+            // enemyhealth2
             // 
-            this.enemyhealth1.Location = new System.Drawing.Point(328, 195);
-            this.enemyhealth1.Name = "enemyhealth1";
-            this.enemyhealth1.Size = new System.Drawing.Size(127, 23);
-            this.enemyhealth1.TabIndex = 6;
+            this.enemyhealth2.Location = new System.Drawing.Point(328, 195);
+            this.enemyhealth2.Name = "enemyhealth2";
+            this.enemyhealth2.Size = new System.Drawing.Size(127, 23);
+            this.enemyhealth2.TabIndex = 6;
             // 
             // textBox1
             // 
@@ -282,7 +289,7 @@
             // 
             // minigame3button
             // 
-            this.minigame3button.Location = new System.Drawing.Point(580, 126);
+            this.minigame3button.Location = new System.Drawing.Point(580, 266);
             this.minigame3button.Name = "minigame3button";
             this.minigame3button.Size = new System.Drawing.Size(53, 41);
             this.minigame3button.TabIndex = 26;
@@ -290,11 +297,49 @@
             this.minigame3button.UseVisualStyleBackColor = true;
             this.minigame3button.Click += new System.EventHandler(this.button1_Click);
             // 
+            // enemypic3
+            // 
+            this.enemypic3.Image = ((System.Drawing.Image)(resources.GetObject("enemypic3.Image")));
+            this.enemypic3.Location = new System.Drawing.Point(589, 48);
+            this.enemypic3.Name = "enemypic3";
+            this.enemypic3.Size = new System.Drawing.Size(127, 141);
+            this.enemypic3.TabIndex = 27;
+            this.enemypic3.TabStop = false;
+            this.enemypic3.Click += new System.EventHandler(this.enemypic3_Click);
+            // 
+            // enemypic1
+            // 
+            this.enemypic1.Image = ((System.Drawing.Image)(resources.GetObject("enemypic1.Image")));
+            this.enemypic1.Location = new System.Drawing.Point(59, 48);
+            this.enemypic1.Name = "enemypic1";
+            this.enemypic1.Size = new System.Drawing.Size(127, 141);
+            this.enemypic1.TabIndex = 28;
+            this.enemypic1.TabStop = false;
+            this.enemypic1.Click += new System.EventHandler(this.enemypic1_Click);
+            // 
+            // enemyhealth1
+            // 
+            this.enemyhealth1.Location = new System.Drawing.Point(59, 195);
+            this.enemyhealth1.Name = "enemyhealth1";
+            this.enemyhealth1.Size = new System.Drawing.Size(127, 23);
+            this.enemyhealth1.TabIndex = 29;
+            // 
+            // enemyhealth3
+            // 
+            this.enemyhealth3.Location = new System.Drawing.Point(589, 194);
+            this.enemyhealth3.Name = "enemyhealth3";
+            this.enemyhealth3.Size = new System.Drawing.Size(127, 23);
+            this.enemyhealth3.TabIndex = 30;
+            // 
             // battlephase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 472);
+            this.Controls.Add(this.enemyhealth3);
+            this.Controls.Add(this.enemyhealth1);
+            this.Controls.Add(this.enemypic1);
+            this.Controls.Add(this.enemypic3);
             this.Controls.Add(this.minigame3button);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Speedbar4);
@@ -314,8 +359,8 @@
             this.Controls.Add(this.Attackbutton2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.enemyhealth1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.enemyhealth2);
+            this.Controls.Add(this.enemypic2);
             this.Controls.Add(this.speedbar1);
             this.Controls.Add(this.HealthBar1);
             this.Controls.Add(this.Itembutton1);
@@ -324,7 +369,9 @@
             this.Name = "battlephase";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemypic2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemypic3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemypic1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,8 +385,8 @@
         private System.Windows.Forms.ProgressBar HealthBar1;
         private System.Windows.Forms.ProgressBar speedbar1;
         private System.Windows.Forms.Timer herotimer1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ProgressBar enemyhealth1;
+        private System.Windows.Forms.PictureBox enemypic2;
+        private System.Windows.Forms.ProgressBar enemyhealth2;
         private System.Windows.Forms.Timer globaltimer;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
@@ -365,6 +412,11 @@
         private System.Windows.Forms.Timer minigametimer2;
         private System.Windows.Forms.Button minigame3button;
         private System.Windows.Forms.Timer minigametimer3;
+        private System.Windows.Forms.Timer minigametimer1;
+        private System.Windows.Forms.PictureBox enemypic3;
+        private System.Windows.Forms.PictureBox enemypic1;
+        private System.Windows.Forms.ProgressBar enemyhealth1;
+        private System.Windows.Forms.ProgressBar enemyhealth3;
     }
 }
 
