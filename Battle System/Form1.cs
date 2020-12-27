@@ -18,18 +18,38 @@ namespace Battle_System
         public Enemy enemyexample;
         public Enemy enemyexample2;
         public Enemy enemyexample3;
+
         public int atkchose;
+
         public Random random = new Random();
         public static Yuushadono example;
+        public Yuushadono example2;
+        public Yuushadono example3;
+        public Yuushadono example4;
+
+        public int enemychoose = 0;
+
         public int minigame1count = 0;
         public int minigame2count = 0;
         public int minigame3count = 0;
+        
+
         public int count3 = 0;
         public int count2 = 0;
+
+        public int[] enemy1 = new int[6];
+        public int[] enemy2 = new int[6];
+        public int[] enemy3 = new int[6];
+        public string enemyname1;
+        public string enemyname2;
+        public string enemyname3;
         public battlephase()
             
         {
             example = new Yuushadono();
+            example2 = new Yuushadono();
+            example3 = new Yuushadono();
+            example4 = new Yuushadono();
             enemyexample = new Enemy();
             enemyexample2 = new Enemy();
             enemyexample3 = new Enemy();
@@ -40,6 +60,27 @@ namespace Battle_System
             example.health = 100 + ((example.lvl - 1) * 8);
             example.speed = 10;
             example.number = 0;
+            example.luck = 25;
+            example2.attack = 12;
+            example2.defend = 2;
+            example2.lvl = 1;
+            example2.health = 100 + ((example.lvl - 1) * 8);
+            example2.speed = 10;
+            example2.number = 1;
+            example3.luck = 25;
+            example3.attack = 12;
+            example3.defend = 2;
+            example3.lvl = 1;
+            example3.health = 100 + ((example.lvl - 1) * 8);
+            example3.speed = 10;
+            example3.number = 2;
+            example4.luck = 25;
+            example4.attack = 12;
+            example4.defend = 2;
+            example4.lvl = 1;
+            example4.health = 100 + ((example.lvl - 1) * 8);
+            example4.speed = 10;
+            example4.number = 3;
             enemyexample.enemyhealth = 200;
             enemyexample.enemydef = 1;
             enemyexample.enemylvl = 1;
@@ -108,18 +149,22 @@ namespace Battle_System
             Itembutton1.Enabled = false;
 
         }
-        private void enemyaction (object enemy1, EventArgs enemy1event)
+        private void enemyaction(object enemy1, EventArgs enemy1event)
         {
             if (enemyhealth1.Value > 0)
             {
                 if (enemyexample.enemyspeed < 100) enemyexample.enemyspeed += 7;
                 else
                 {
+                    enemyexample.enemychoice = random.Next(0, 3);
                     enemyexample.enemyspeed = 0;
-                    enemyexample.enemychoice = 0;
 
-                    example.health -= enemyexample.enemydamage;
-                    HealthBar1.Value = example.health;
+
+                    if (enemyexample.enemychoice == 0) example.health -= enemyexample.enemydamage;
+                    if (enemyexample.enemychoice == 1) example2.health -= enemyexample.enemydamage;
+                    if (enemyexample.enemychoice == 2) example3.health -= enemyexample.enemydamage;
+                    if (enemyexample.enemychoice == 3) example4.health -= enemyexample.enemydamage;
+                    healthupdate();
                 }
             }
             if (enemyhealth2.Value > 0)
@@ -128,10 +173,13 @@ namespace Battle_System
                 else
                 {
                     enemyexample2.enemyspeed = 0;
-                    enemyexample2.enemychoice = 0;
+                    enemyexample2.enemychoice = random.Next(0, 3);
 
-                    example.health -= enemyexample.enemydamage;
-                    HealthBar1.Value = example.health;
+                    if (enemyexample2.enemychoice == 0) example.health -= enemyexample2.enemydamage;
+                    if (enemyexample2.enemychoice == 1) example2.health -= enemyexample2.enemydamage;
+                    if (enemyexample2.enemychoice == 2) example3.health -= enemyexample2.enemydamage;
+                    if (enemyexample2.enemychoice == 3) example4.health -= enemyexample2.enemydamage;
+                    healthupdate();
                 }
             }
             if (enemyhealth3.Value > 0)
@@ -140,11 +188,17 @@ namespace Battle_System
                 else
                 {
                     enemyexample3.enemyspeed = 0;
-                    enemyexample3.enemychoice = 0;
-
-                    example.health -= enemyexample3.enemydamage;
-                    HealthBar1.Value = example.health;
+                    enemyexample3.enemychoice = random.Next(0, 3);
+                    if (enemyexample3.enemychoice == 0) example.health -= enemyexample3.enemydamage;
+                    if (enemyexample3.enemychoice == 1) example2.health -= enemyexample3.enemydamage;
+                    if (enemyexample3.enemychoice == 2) example3.health -= enemyexample3.enemydamage;
+                    if (enemyexample3.enemychoice == 3) example4.health -= enemyexample3.enemydamage;
+                    healthupdate();
                 }
+            }
+            if (enemyhealth1.Value <= 0 && enemyhealth2.Value <= 0  && enemyhealth3.Value <= 0)
+            {
+
             }
         }
        
@@ -379,7 +433,24 @@ namespace Battle_System
             enemyhealth1.Value = enemyexample.enemyhealth;
             enemyhealth2.Value = enemyexample2.enemyhealth;
             enemyhealth3.Value = enemyexample3.enemyhealth;
+            HealthBar1.Value = example.health;
+            Healthbar2.Value = example2.health;
+            Healthbar3.Value = example3.health;
+            Healthbar4.Value = example4.health;
             
+        }
+        private void enemychooser()
+        {
+
+        }
+
+        private void Skillbutton4_Click(object sender, EventArgs e)
+        {
+            example.health += 25;
+            example2.health += 25;
+            example3.health += 25;
+            example4.health -= 50;
+            healthupdate();
         }
     }
 }

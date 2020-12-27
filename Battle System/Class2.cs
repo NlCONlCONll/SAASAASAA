@@ -16,4 +16,6 @@ namespace Battle_System
        public string enemyname { get; set; }
         public int enemychoice { get; set; }
     }
+    
 }
+

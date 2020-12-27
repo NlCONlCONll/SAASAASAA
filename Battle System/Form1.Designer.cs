@@ -267,6 +267,7 @@
             this.Skillbutton4.TabIndex = 21;
             this.Skillbutton4.Text = "SKILL";
             this.Skillbutton4.UseVisualStyleBackColor = true;
+            this.Skillbutton4.Click += new System.EventHandler(this.Skillbutton4_Click);
             // 
             // Attackbutton4
             // 
