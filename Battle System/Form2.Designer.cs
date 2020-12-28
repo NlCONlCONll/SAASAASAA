@@ -48,6 +48,7 @@
             this.Controls.Add(this.btnPlay);
             this.Name = "FormMenu";
             this.Text = "BATTLE SYSTEM";
+            this.Load += new System.EventHandler(this.FormMenu_Load);
             this.ResumeLayout(false);
 
         }

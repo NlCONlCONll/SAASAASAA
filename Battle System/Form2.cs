@@ -16,5 +16,10 @@ namespace Battle_System
         {
             InitializeComponent();
         }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
