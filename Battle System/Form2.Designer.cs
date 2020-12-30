@@ -59,7 +59,7 @@
             this.Controls.Add(this.lblNamaGame);
             this.Controls.Add(this.btnPlay);
             this.Name = "FormMenu";
-            this.Text = "BATTLE SYSTEM";
+            this.Text = "MENU";
             this.Load += new System.EventHandler(this.FormMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
