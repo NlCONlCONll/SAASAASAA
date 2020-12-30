@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             this.btnPlay = new System.Windows.Forms.Button();
             this.lblNamaGame = new System.Windows.Forms.Label();
+            this.picBoxBgMenu = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxBgMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPlay
@@ -51,6 +54,16 @@
             this.lblNamaGame.Text = "NAMA GAME";
             this.lblNamaGame.Click += new System.EventHandler(this.label1_Click);
             // 
+            // picBoxBgMenu
+            // 
+            this.picBoxBgMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBoxBgMenu.BackgroundImage")));
+            this.picBoxBgMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picBoxBgMenu.Location = new System.Drawing.Point(-4, 0);
+            this.picBoxBgMenu.Name = "picBoxBgMenu";
+            this.picBoxBgMenu.Size = new System.Drawing.Size(806, 451);
+            this.picBoxBgMenu.TabIndex = 2;
+            this.picBoxBgMenu.TabStop = false;
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -58,9 +71,11 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblNamaGame);
             this.Controls.Add(this.btnPlay);
+            this.Controls.Add(this.picBoxBgMenu);
             this.Name = "FormMenu";
             this.Text = "MENU";
             this.Load += new System.EventHandler(this.FormMenu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxBgMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -70,5 +85,6 @@
 
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Label lblNamaGame;
+        private System.Windows.Forms.PictureBox picBoxBgMenu;
     }
 }

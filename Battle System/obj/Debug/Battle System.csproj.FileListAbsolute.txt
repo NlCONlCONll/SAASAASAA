@@ -8,3 +8,11 @@ C:\Users\erick\source\repos\Battle System\Battle System\obj\Debug\Battle System.
 C:\Users\erick\source\repos\Battle System\Battle System\obj\Debug\Battle System.csproj.CoreCompileInputs.cache
 C:\Users\erick\source\repos\Battle System\Battle System\obj\Debug\Battle System.exe
 C:\Users\erick\source\repos\Battle System\Battle System\obj\Debug\Battle System.pdb
+D:\VisualStudio\SAA 2.0\Battle System\obj\Debug\Battle System.csprojAssemblyReference.cache
+D:\VisualStudio\SAA 2.0\Battle System\obj\Debug\Battle_System.battlephase.resources
+D:\VisualStudio\SAA 2.0\Battle System\obj\Debug\Battle_System.FormMenu.resources
+D:\VisualStudio\SAA 2.0\Battle System\obj\Debug\Battle_System.Properties.Resources.resources
+D:\VisualStudio\SAA 2.0\Battle System\obj\Debug\Battle System.csproj.GenerateResource.cache
+D:\VisualStudio\SAA 2.0\Battle System\obj\Debug\Battle System.csproj.CoreCompileInputs.cache
+D:\VisualStudio\SAA 2.0\Battle System\obj\Debug\Battle System.exe
+D:\VisualStudio\SAA 2.0\Battle System\obj\Debug\Battle System.pdb
